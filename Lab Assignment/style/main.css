@@ -1,0 +1,36 @@
+/* importing the normalize css*/
+@import "normalize.css";
+
+/*for small screens*/
+@media screen and (max-width: 500px){
+    /*first grid column*/
+    .grid{
+        display: grid;
+        grid-template-columns: auto;
+        background-color:rgb(255, 255, 255);
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 500px){
+    /*second grid column*/
+    .grid{
+        display: grid;
+        grid-template-columns: auto auto;
+        background-color: rgb(58, 47, 107);
+        padding: 10px;
+    }
+}
+/*for image sizing*/
+img{
+    width:100%;
+    display:block;
+}
+
+/*grid items format*/
+.grid-item{
+    background-color:rgb(255, 255, 255);
+    border: 3px solid darkgrey;
+    padding: 50px;
+    justify-content: center;
+}
